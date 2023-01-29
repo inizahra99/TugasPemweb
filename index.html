@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web zahra</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <img src="cover.jpg" alt="" style="width: 100%; height: 400px; background-repeat: no-repeat; background-size: cover; background-position: top;">
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openKota('Home')">
+            <img src="home.png" alt="" width="20" height="20" style="background-color: white;">
+        </button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Jungkook')">Jungkook</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Jimin')">Jimin</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Taehyung')">Taehyung</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Suga')">Suga</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-button">BTS</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <button class="w3-bar-item w3-button" onclick="openKota('Ada 7 Member')">Ada 7 Member</button>
+              <a href="#" class="w3-bar-item w3-button" onclick="openKota('Boyband asal Korea Selatan')">Boyband asal Korea Selatan</a>
+            </div>
+        </div>
+        <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+    </div>
+    <div id="Home" class="w3-container kota">
+        <center>
+            <h2>BTS</h2>
+            <p>Beberapa Member BTS</p>
+        </center>
+
+    </div>
+    <div id="Jungkook" class="w3-container kota w3-animate-top" style="display:none">
+        <h2>Jungkook</h2>
+        <p>Jeon Jung-kook (bahasa Korea: 전정국, lahir 1 September 1997) atau lebih dikenal dengan mononimnya sebagai Jungkook, adalah seorang penyanyi dan penari asal Korea Selatan. Ia merupakan seorang anggota dari grup vokal pria BTS, dengan posisinya sebagai vokalis dan penari utama. Jungkook pada Agustus 2021</p>
+        <img src="jungkook.jpg" alt="" width="400" height="200">
+    </div>
+    <div id="Jimin" class="w3-container kota w3-animate-bottom" style="display:none">
+        <h2>Jimin</h2>
+        <p>
+            Jimin lahir di Geumsa-dong, Distrik Geumjeong, Busan, Korea Selatan pada tanggal 13 Oktober 1995. Ia merupakan anak pertama dari dua bersaudara. Saat SMP, Jimin adalah siswa yang pintar dan selalu menjadi ketua kelas.</p>
+        <img src="jimin.jpg" width="400" height="200">
+    </div>
+    <div id="Taehyung" class="w3-container kota w3-animate-left" style="display:none">
+        <h2>Taehyung</h2>
+        <p>Kim Tae-hyung (bahasa Korea: 김태형, lahir 30 Desember 1995) atau lebih dikenal sebagai V adalah seorang penyanyi, penulis lagu, dan pemeran asal Korea Selatan. Ia merupakan anggota dari grup vokal pria BTS, yang dikelola oleh Big Hit Music.</p>
+        <img src="taehyung.jpg" alt="" width="400" height="200">
+    </div>
+    <div id="Suga" class="w3-container kota w3-animate-right" style="display:none">
+        <h2>Suga</h2>
+        <p>Min Yoon-gi (bahasa Korea: 민윤기, lahir 9 Maret 1993) atau lebih dikenal sebagai Suga, adalah seorang penyanyi rap, penulis lagu, dan produser rekaman asal Korea Selatan. Suga merupakan anggota dari grup vokal pria BTS, yang dikelola oleh Big Hit Music.</p>
+        <img src="suga.jpg" alt="" width="400" height="400">
+    </div>
+    <div id="Ada 7 Member" class="w3-container kota w3-animate-right" style="display:none">
+        <h2>Ada 7 Member</h2>
+        <p>Jungkook, Jimin, Jin, Suga, RM, Taehyung, Jhope</p>
+        <img src="bts.jpg" alt="" width="400" height="400">
+    </div>
+    <div id="Boyband asal Korea Selatan" class="w3-container kota w3-animate-right" style="display:none">
+        <h2>Boyband asal Korea Selatan</h2>
+        <p>BTS (방탄소년단) terdiri dari 7 member: RM, Jin, Suga, J-Hope, Jimin, V dan Jungkook. BTS debut pada tanggal 13 Juni 2013, di bawah naungan Big Hit Entertainment, dengan single utama No More Dream di album 2 Cool 4 Skool.</p>
+        <img src="bts.jpg" alt="" width="400" height="400">
+    </div>
+    <div id="Profile" class="w3-container kota w3-animate-right" style="display:none">
+        <center>
+        <h2>My Profile</h2>
+        <table>
+            <tr>
+                <td>Nama : Nurul Fithriani Zahra</td>
+            </tr>
+            <tr>
+                <td>NIM : 1012207066</td>
+            </tr>
+            <tr>
+                <td>Kelas : IF-2</td>
+            </tr>
+        </table>
+    </center>
+    </div>
+    
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
